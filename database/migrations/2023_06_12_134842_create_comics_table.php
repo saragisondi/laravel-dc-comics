@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
+            $table->string('title',100);
+            $table->text('description');
+            $table->string('thumb');
+            $table->decimal('price', $precision = 4, $scale = 2);
+            $table->string('series',50);
+            $table->dateTime('sale_date');
+            $table->string('type',30);
+            $table->string('artist');
+            $table->string('writers');
             $table->timestamps();
         });
     }
