@@ -1,7 +1,6 @@
 @extends('layout.main')
 
 @section('content')
-<h1>Fumetti</h1>
 
 <div class="container d-flex">
   <div class="row">
@@ -16,7 +15,7 @@
               <p>{{$comic->sale_date}}</p>
               <p>{{$comic->series}}</p>
             </div>
-            <a href="#" class="btn btn-primary my-4">DESCRIZIONE</a>
+            <a href="{{route('comic.show', $comic)}}" class="btn btn-primary my-4">DESCRIZIONE</a>
           </div>
         </div>
       @endforeach
