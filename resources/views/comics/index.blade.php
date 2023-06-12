@@ -2,34 +2,26 @@
 
 @section('content')
 <h1>Fumetti</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Titolo</th>
-      <th scope="col">Descrizione</th>
-      {{-- <th scope="col">Immagine</th> --}}
-      <th scope="col">Prezzo</th>
-      <th scope="col">Serie</th>
-      <th scope="col">Data di uscita</th>
-      <th scope="col">Tipo</th>
 
-    </tr>
-  </thead>
-  <tbody>
+<div class="container d-flex">
+  <div class="row">
     @foreach ($comics as $comic)
-      <tr>
-        <td>{{$comic->id}}</td>
-        <td>{{$comic->title}}</td>
-        <td>{{$comic->description}}</td>
-        {{-- <td>{{$comic->thumb}}</td> --}}
-        <td>{{$comic->price}}</td>
-        <td>{{$comic->series}}</td>
-        <td>{{$comic->sale_date}}</td>
-        <td>{{$comic->type}}</td>
-      </tr>
-    @endforeach
-
-  </tbody>
-</table>
+      <div class="col my-4" >
+          <div class="card px-4 h-100" style="width: 18rem;">
+            <img src="{{$comic->thumb}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{$comic->title}}</h5>
+              <p class="card-text">{{$comic->price}}</p>
+              <p>{{$comic->type}}</p>
+              <p>{{$comic->sale_date}}</p>
+              <p>{{$comic->series}}</p>
+            </div>
+            <a href="#" class="btn btn-primary my-4">DESCRIZIONE</a>
+          </div>
+        </div>
+      @endforeach
+  </div>
+</div>
 @endsection
+
+
