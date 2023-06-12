@@ -19,4 +19,4 @@ Route::get('/',[PageController::class, 'index'])->name('home');
 
 Route::get('contatti',[PageController::class, 'contacts'])->name('contacts');
 
-// Route::resource('comic',['comics', ComicController::class]);
+Route::resource('comic', ComicController::class);
