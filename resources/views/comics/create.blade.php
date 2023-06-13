@@ -12,48 +12,48 @@
     <div class="container">
       <div class="mb-3">
         <label for="title" class="form-label fw-bold">Titolo</label>
-        <input type="text" class="form-control" id="title" name="title">
+        <input type="text" class="form-control" id="title" name="title" placeholder="Titolo">
       </div>
 
       <div class="mb-3">
         <label for="description" class="form-label fw-bold">Descrizione</label>
-        <input type="text" class="form-control" id="description" name="description">
+        <input type="text" class="form-control" id="description" name="description" placeholder="Descrizione">
       </div>
 
       <div class="mb-3">
         <label for="thumb" class="form-label fw-bold">Immagine</label>
-        <input type="text" class="form-control" id="thumb" name="thumb">
+        <input type="text" class="form-control" id="thumb" name="thumb" placeholder="Immagine">
       </div>
 
 
       <div class="mb-3">
         <label for="price" class="form-label fw-bold">Prezzo</label>
-        <input type="text" class="form-control" id="price" name="price">
+        <input type="text" class="form-control" id="price" name="price" placeholder="Prezzo">
       </div>
 
       <div class="mb-3">
         <label for="series" class="form-label fw-bold">Serie</label>
-        <input type="text" class="form-control" id="series" name="series">
+        <input type="text" class="form-control" id="series" name="series" placeholder="Serie">
       </div>
 
       <div class="mb-3">
         <label for="sale_date" class="form-label fw-bold">Data uscita</label>
-        <input type="text" class="form-control" id="sale_date" name="sale_date">
+        <input type="text" class="form-control" id="sale_date" name="sale_date" placeholder="Data">
       </div>
 
       <div class="mb-3">
         <label for="type" class="form-label fw-bold">Tipo</label>
-        <input type="text" class="form-control" id="type" name="type">
+        <input type="text" class="form-control" id="type" name="type" placeholder="Tipo">
       </div>
 
       <div class="mb-3">
         <label for="artists" class="form-label fw-bold">Artisti</label>
-        <input type="text" class="form-control" id="artists" name="artists">
+        <input type="text" class="form-control" id="artists" name="artists" placeholder="Artisti">
       </div>
 
       <div class="mb-3">
         <label for="writers" class="form-label fw-bold">Scrittori</label>
-        <input type="text" class="form-control" id="writers" name="series">
+        <input type="text" class="form-control" id="writers" name="series" placeholder="Scrittori">
       </div>
 
 
