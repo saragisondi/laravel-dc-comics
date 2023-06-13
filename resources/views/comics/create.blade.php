@@ -52,8 +52,8 @@
       </div>
 
       <div class="mb-3">
-        <label for="writers" class="form-label fw-bold">Scrittori</label>
-        <input type="text" class="form-control" id="writers" name="series" placeholder="Scrittori">
+      <label for="writers" class="form-label fw-bold">scrittori</label>
+        <input type="text" class="form-control" id="writers" name="writers" placeholder="Scrittori">
       </div>
 
 
