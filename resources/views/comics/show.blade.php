@@ -11,9 +11,9 @@
               <h5 class="card-title">Descrizione:</h5>
               <p class="card-text">{{$comic->description}}</p>
               <h5 class="card-title">Artisti:</h5>
-              <p></p>
+              <p>{{$comic->artists}}</p>
               <h5 class="card-title">Scrittori:</h5>
-              <p></p>
+              <p>{{$comic->writers}}</p>
             </div>
             <a href="{{route('comic.index')}}" class="btn btn-primary my-4">Torna indietro</a>
           </div>
