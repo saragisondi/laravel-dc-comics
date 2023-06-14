@@ -18,7 +18,8 @@
   @endif
 
   <form action="{{route('comic.update', $comic)}}" method="POST">
-
+    @method('PUT')
+    
     <div class="container">
       {{-- token di validità form --}}
       @csrf
