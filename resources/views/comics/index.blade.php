@@ -25,7 +25,7 @@
           <a href="{{route('comic.show', $comic)}}" title="vai" class="btn btn-success my-4"><i class="fa-solid fa-eye"></i></a>
         </td>
         <td>
-          <a href="{{route('comic.show', $comic)}}" title="modifica" class="btn btn-primary my-4"><i class="fa-solid fa-pencil"></i></a>
+          <a href="{{route('comic.edit', $comic)}}" title="modifica" class="btn btn-primary my-4"><i class="fa-solid fa-pencil"></i></a>
         </td>
         <td>
           <a href="{{route('comic.show', $comic)}}" title="delete" class="btn btn-danger my-4"><i class="fa-solid fa-trash-can"></i></a>
