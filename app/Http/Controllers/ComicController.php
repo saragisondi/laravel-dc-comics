@@ -77,7 +77,7 @@ class ComicController extends Controller
      * @param  \App\Models\comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, comic $comic)
+    public function update(ComicRequest $request, comic $comic)
     {
         //
     }
