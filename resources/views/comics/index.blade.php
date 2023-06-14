@@ -28,7 +28,22 @@
           <a href="{{route('comic.edit', $comic)}}" title="modifica" class="btn btn-primary my-4"><i class="fa-solid fa-pencil"></i></a>
         </td>
         <td>
-          <a href="{{route('comic.show', $comic)}}" title="delete" class="btn btn-danger my-4"><i class="fa-solid fa-trash-can"></i></a>
+          <form
+          class="d-inline"
+          action="{{route('comic.destroy', $comic)}}"
+          method="POST"
+          onsubmit="return confirm('Confermi l\'eliminazione di {{$comic->title}} ? ')">
+
+          @csrf
+          @method('DELETE')
+          <button
+          type="submit"
+          title="elimina"
+          class="btn btn-danger">
+
+            <i class="fa-solid fa-trash-can"></i>
+        </button>
+        </form>
         </td>
       </tr>
       @endforeach
