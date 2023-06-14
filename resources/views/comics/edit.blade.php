@@ -19,14 +19,14 @@
 
   <form action="{{route('comic.update', $comic)}}" method="POST">
     @method('PUT')
-    
+
     <div class="container">
       {{-- token di validità form --}}
       @csrf
       <div class="mb-3">
         <label for="title" class="form-label fw-bold">Titolo</label>
         <input
-        value="{{old('title')}}"
+        value="{{old('title', $comic->title)}}"
         type="text"
         class="form-control
         @error('title') is-invalid @enderror"
@@ -43,7 +43,7 @@
       <div class="mb-3">
         <label for="description" class="form-label fw-bold">Descrizione</label>
         <input
-        value="{{old('description')}}"
+        value="{{old('description', $comic->description)}}"
         type="text"
         class="form-control @error('description') is-invalid @enderror"
         id="description"
@@ -58,7 +58,7 @@
       <div class="mb-3">
         <label for="thumb" class="form-label fw-bold">Immagine</label>
         <input
-        value="{{old('thumb')}}"
+        value="{{old('thumb', $comic->thumb)}}"
         type="text"
         class="form-control @error('thumb') is-invalid @enderror"
         id="thumb"
@@ -74,7 +74,7 @@
       <div class="mb-3">
         <label for="price" class="form-label fw-bold">Prezzo</label>
         <input
-        value="{{old('price')}}"
+        value="{{old('price', $comic->price)}}"
         type="text"
         class="form-control @error('price') is-invalid @enderror"
         id="price"
@@ -89,7 +89,7 @@
       <div class="mb-3">
         <label for="series" class="form-label fw-bold">Serie</label>
         <input
-        value="{{old('series')}}"
+        value="{{old('series', $comic->series)}}"
         type="text"
         class="form-control @error('series') is-invalid @enderror"
         id="series"
@@ -104,7 +104,7 @@
       <div class="mb-3">
         <label for="sale_date" class="form-label fw-bold">Data uscita</label>
         <input
-        value="{{old('sale_date')}}"
+        value="{{old('sale_date', $comic->sale_date)}}"
         type="text"
         class="form-control @error('sale_date') is-invalid @enderror"
         id="sale_date"
@@ -119,7 +119,7 @@
       <div class="mb-3">
         <label for="type" class="form-label fw-bold">Tipo</label>
         <input
-        value="{{old('type')}}"
+        value="{{old('type', $comic->type)}}"
         type="text"
         class="form-control @error('type') is-invalid @enderror"
         id="type"
@@ -134,7 +134,7 @@
       <div class="mb-3">
         <label for="artists" class="form-label fw-bold">Artisti</label>
         <input
-        value="{{old('artists')}}"
+        value="{{old('artists', $comic->artists)}}"
         type="text"
         class="form-control @error('artists') is-invalid @enderror"
         id="artists"
@@ -149,7 +149,7 @@
       <div class="mb-3">
       <label for="writers" class="form-label fw-bold">scrittori</label>
         <input
-        value="{{old('writers')}}"
+        value="{{old('writers', $comic->writers)}}"
         type="text"
         class="form-control @error('writers') is-invalid @enderror"
         id="writers"
