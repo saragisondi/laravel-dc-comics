@@ -17,7 +17,7 @@
   </div>
   @endif
 
-  <form action="{{route('comic.store')}}" method="POST">
+  <form action="{{route('comic.update', $comic)}}" method="POST">
 
     <div class="container">
       {{-- token di validità form --}}
