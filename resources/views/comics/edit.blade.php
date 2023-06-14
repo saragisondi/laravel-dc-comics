@@ -3,7 +3,7 @@
 @section('content')
 
 <div>
-  <h1 class="my-5 text-center fw-bold text-primary-emphasis">Modifica Fumetto</h1>
+  <h1 class="my-5 text-center fw-bold text-primary">Modifica Fumetto</h1>
 
   @if($errors->any())
   <div class="alert alert-danger" role="alert">

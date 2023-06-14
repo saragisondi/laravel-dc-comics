@@ -1,6 +1,8 @@
 @extends('layout.main')
 
 @section('content')
-<h1>Home</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nam obcaecati repellat officiis repudiandae deleniti quae, sed consequatur totam exercitationem, quod vitae aspernatur magnam natus quas doloribus, reprehenderit commodi minima ab harum. Quasi nesciunt beatae ab veritatis dolorem laboriosam facilis, illum quidem. Totam rerum ut inventore quis distinctio. Nulla id, dignissimos minus, incidunt voluptatibus laboriosam sequi molestias facilis possimus, facere repudiandae tempore consequuntur sunt consequatur suscipit velit. Aliquid asperiores maxime recusandae, numquam incidunt nobis impedit cum ullam nisi rerum doloremque consequuntur eveniet eos beatae nihil optio? Pariatur, ab deleniti rem ut beatae officiis temporibus ducimus nulla quae repellat nobis recusandae, nisi dolorum laboriosam optio saepe tempora fuga, consectetur voluptatem quaerat illo dolor veniam? Labore, ea non officia blanditiis nobis esse a natus impedit soluta voluptas voluptate nesciunt delectus nemo quidem rerum fugiat amet commodi explicabo ratione? Laudantium maxime cum amet, reiciendis ullam vel fuga. Modi maiores quisquam distinctio repellendus accusamus molestiae vel. Ipsa, odio, atque cum voluptas, ex perspiciatis a dicta fuga quia distinctio cumque voluptatem veniam autem voluptatum suscipit. Itaque, et necessitatibus asperiores porro eos aspernatur aperiam, vel dicta quisquam, dolor ipsum. Maiores qui maxime, a vel rem voluptatum. Quibusdam soluta nemo iusto aspernatur tempora mollitia deleniti unde reprehenderit.</p>
+<h1 class="text-center fw-bold text-primary">Home</h1>
+<div class="container d-flex justify-content-center my-5 ">
+  <img src="{{Vite::asset('/resources/img/comic.png')}}" alt="">
+</div>
 @endsection
