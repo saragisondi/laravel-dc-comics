@@ -36,10 +36,11 @@
 
           @csrf
           @method('DELETE')
+
           <button
           type="submit"
           title="elimina"
-          class="btn btn-danger">
+          class="btn btn-danger my-4">
 
             <i class="fa-solid fa-trash-can"></i>
         </button>
